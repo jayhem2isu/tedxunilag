@@ -33,3 +33,7 @@ function welcome_animation() {
 $(document).ready(function() {
   welcome_animation();
 });
+
+$(window).scroll(function(){
+    $("#sj-content").css("opacity", 1 - $(window).scrollTop() / 250);
+});
